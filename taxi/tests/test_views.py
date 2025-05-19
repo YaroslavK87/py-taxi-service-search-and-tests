@@ -44,7 +44,7 @@ class PrivateViewTest(TestCase):
         manufacturer = Manufacturer.objects.all()
 
         url = reverse("taxi:manufacturer-list")
-        res = self.client.get(ulr)
+        res = self.client.get(url)
         self.assertEqual(
             list(res.context["manufacturer_list"]),
             list(manufacturer)
