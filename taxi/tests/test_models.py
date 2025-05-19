@@ -17,6 +17,8 @@ class StringModelsTest(TestCase):
     def test_driver(self):
         driver = Driver.objects.create_user(
             username="Test",
+            first_name="Test",
+            last_name="Test",
             password="Test123",
             license_number="TST12345"
         )
